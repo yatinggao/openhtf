@@ -47,12 +47,16 @@ requires = [  # pylint: disable=invalid-name
     'MarkupSafe==0.23',
     'mutablerecords==0.2.4',
     'pyaml==15.3.1',
-    'mutablerecords==0.2.4',
     'python-gflags==2.0',
     'PyYAML==3.11',
     'Rocket==1.2.4',
     'singledispatch==3.4.0.3',
     'Werkzeug==0.10.4',
+]
+
+tests_require = [
+    'mock',
+    'pytest',
 ]
 
 
@@ -99,5 +103,5 @@ setup(
         'test': PyTestCommand,
     },
     install_requires=requires,
-    tests_require=['pytest'],
+    tests_require=tests_require,
 )
